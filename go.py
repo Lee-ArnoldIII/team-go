@@ -1,8 +1,9 @@
-from IPython.display import clear_output
-
+'''
+We need to design the board to be based on player skill level. Beginners = 9x9, Intermediate = 13x13, and Advanced = 19x19
+'''
 def display_board(board):
 
-    clear_output()
+    
     print(board[7]+ ' | ' + board[8] + ' | ' + board[9])
     print('--|---|--')
     print(board[4]+ ' | ' + board[5] + ' | ' + board[6])
@@ -16,8 +17,8 @@ All Python classes will reside in this file
 # Establish board for game here. This may be subject to change
 class Board:
 
-    def __init__(self):
-        pass
+    def __init__(self, dimensions):
+        self.dimensions = dimensions
 
     def __str__(self):
         pass
